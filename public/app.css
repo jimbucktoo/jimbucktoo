@@ -68,7 +68,7 @@ div.row {
 
 .propic {
     position: fixed;
-    margin-left: 77.5%;
+    margin-left: 81%;
     margin-top: 3%;
     border: 5px solid black;
 }
@@ -83,14 +83,14 @@ div.row {
 
 .fullname {
     position: fixed;
-    margin-left: 80.3%;
+    margin-left: 83.5%;
     margin-top: 20%;
     font-family: 'Share Tech Mono', monospace;
 }
 
 .phonenumber {
     position: fixed;
-    margin-left: 80%;
+    margin-left: 83.1%;
     margin-top: 22.3%;
     font-family: 'Share Tech Mono', monospace;
 }
