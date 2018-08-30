@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/materialize.min.css" media="screen,projection">
     <link rel="stylesheet" type="text/css" href="/app.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body class="white">
@@ -33,8 +34,6 @@
     </div>
     <div class="parallax-container">
         <div id="scale-demo" class="scale-transition scale-out"><img class="propic circle" src="/images/jimmy.jpeg" width="225px" />
-            <h5 class="fullname">Jimmy Liang</h5>
-            <h5 class="phonenumber">314-956-5183</h5>
         </div>
         <div class="computer-hover"></div>
         <div class="parallax"><img src="/images/hero.png" width="100%"></div>
@@ -50,7 +49,7 @@
         <br>
         <br>
         <br>
-        <div class="parallax"><img src="/images/skills.png" width="100%"></div>
+        <div class="parallax skills load-hidden"><img src="/images/skills.png" width="100%"></div>
     </div>
     <div class="section parallax-spacing">
         <div class="row container">
@@ -80,7 +79,14 @@
         var instances = M.Parallax.init(elems, options);
     });
 
-    // Or with jQuery
+    ScrollReveal().reveal('.portfolioheader', { duration: 5000 });
+    ScrollReveal().reveal('.portfoliolinks', { delay: 1000 });
+    ScrollReveal().reveal('.portfoliolinks', { duration: 5000 });
+    ScrollReveal().reveal('.emaildiv', { duration: 5000 });
+    ScrollReveal().reveal('.githubdiv', { duration: 5000 });
+    ScrollReveal().reveal('.linkedindiv', { duration: 5000 });
+    ScrollReveal().reveal('.skills', { delay: 1000 });
+    ScrollReveal().reveal('.skills', { duration: 5000 });
 
     $(document).ready(function() {
         $('.sidenav').sidenav();
