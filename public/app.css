@@ -10,16 +10,21 @@ html.sr .load-hidden {
     background-color: #0288d1;
 }
 
-.parallax-container {
-    height: 800px;
-}
-
 .primaryGoal {
     background-color: #0277bd;
 }
 
 .hide {
     display: none;
+}
+
+.parallax {
+    height: 100%;
+    position: relative;
+}
+
+.parallax-container {
+    height: 50vw;
 }
 
 .parallax-spacing {
@@ -42,24 +47,25 @@ html.sr .load-hidden {
     margin-left: 100px;
     margin-top: 10px;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .portfoliolinks {
-    margin-left: 30%;
+    margin-left: 10%;
 }
 
 .portfolioheader {
     font-family: 'Share Tech Mono', monospace;
-    margin-top: 30%;
-    margin-left: 20%;
+    margin-top: 25vw;
+    margin-left: 10vw;
+    font-size: 3vw;
 }
 
 .portfoliolink {
     color: black;
     margin-top: 5%;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 25px;
+    font-size: 2vw;
 }
 
 .portfoliolink:hover {
@@ -67,7 +73,6 @@ html.sr .load-hidden {
     margin-top: 5%;
     margin-left: 1%;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 25px;
 }
 
 .propic {
@@ -78,12 +83,28 @@ html.sr .load-hidden {
     z-index: 1;
 }
 
-.computer-hover {
-    background-color: transparent;
-    margin-top: 8%;
-    margin-left: 30%;
-    height: 320px;
-    width: 540px;
+.skillsdiv {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+.h1tag {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2vw;
+}
+
+.ptag {
+    margin-top: 5vw;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2vw;
+}
+
+.lblskills {
+    margin-top: 3vw;
+    margin-left: 38.3vw;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 5vw;
 }
 
 #linkedinlogo {
@@ -97,4 +118,22 @@ html.sr .load-hidden {
 
 #githublogo:hover {
     opacity: 0.5;
+}
+
+@media only screen and (max-width: 1200px) {
+    .propic {
+        display: none;
+        position: fixed;
+        margin-left: 81%;
+        margin-top: 3%;
+        border: 5px solid black;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .skillsdiv {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 13px;
+    }
 }

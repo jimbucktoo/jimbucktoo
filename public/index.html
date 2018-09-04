@@ -33,32 +33,41 @@
         </ul>
     </div>
     <div class="parallax-container">
-        <div id="scale-demo" class="scale-transition scale-out"><img class="propic circle" src="/images/jimmy.jpeg" width="225px" />
+        <div id="scale-demo" class="load-hidden"><img class="propic circle" src="/images/jimmy.jpeg" width="225px" /></div>
+        <div class="parallax">
+            <img class="hero" src="/images/hero.png" width="100%">
         </div>
-        <div class="computer-hover"></div>
-        <div class="parallax"><img src="/images/hero.png" width="100%"></div>
     </div>
     <div class="section parallax-spacing">
         <div class="row container">
-            <div id="githublogo" class="githubdiv"><a href="https://github.com/jimbucktoo"><img src="/images/githublogo-w.png" width="50px"><img src="/images/github-w.png" width="100px"></a></div>
-            <div class="linkedindiv"><a href="https://www.linkedin.com/in/jimmy-liang/"><img id="linkedinlogo" src="/images/linkedin-w.png" width="130px"></a></div>
-            <div class="emaildiv">jamesliang.g@gmail.com</div>
+            <div id="githublogo" class="githubdiv col s12 m6 l4">
+                <center><a href="https://github.com/jimbucktoo"><img src="/images/githublogo-w.png" width="50px"><img src="/images/github-w.png" width="100px"></a></center>
+            </div>
+            <div class="linkedindiv col s12 m6 l4">
+                <center><a href="https://www.linkedin.com/in/jimmy-liang/"><img id="linkedinlogo" src="/images/linkedin-w.png" width="130px"></a></center>
+            </div>
+            <div class="emaildiv col s12 m12 l4">
+                <center>jamesliang.g@gmail.com</center>
+            </div>
         </div>
     </div>
     <div class="parallax-container">
-        <br>
-        <br>
-        <br>
+        <div class="lblskills">Skills:</div>
         <div class="parallax skills load-hidden"><img src="/images/skills.png" width="100%"></div>
     </div>
     <div class="section parallax-spacing">
         <div class="row container">
+            <div class="skillsdiv">var skills = [‘html5’, ’css3’, ’javascript’, ‘jquery’, ‘gulp.js’, ’webpack.js’,
+                <br> ‘react.js’, ’vue.js’, ‘express.js’, ‘node.js’,
+                <br> ‘mongodb’, ‘postgresql’, ‘git/github’, ‘npm’, ‘firebase’];</div>
         </div>
     </div>
     <div class="parallax-container">
-        <h3 class="portfolioheader">Projects:</h3>
-        <div class="portfoliolinks"><a href="https://landingpage-3a359.firebaseapp.com/" class="portfoliolink">&ltlink&gtlandingpage&lt/link&gt</a></div>
-        <div class="portfoliolinks"><a href="https://comodiscount.com/" class="portfoliolink">&ltlink&gtcomodiscount&lt/link&gt</a></div>
+        <div class="portfolioheader">
+            <div>Projects:</div>
+            <!-- <div class="portfoliolinks"><a href="https://landingpage-3a359.firebaseapp.com/" class="portfoliolink">&ltlink&gtlandingpage&lt/link&gt</a></div>
+            <div class="portfoliolinks"><a href="https://comodiscount.com/" class="portfoliolink">&ltlink&gtcomodiscount&lt/link&gt</a></div> -->
+        </div>
         <div class="parallax"><img src="/images/cover3.jpg" width="100%"></div>
     </div>
     <script type="text/javascript" src="/materialize.min.js"></script>
@@ -79,24 +88,25 @@
         var instances = M.Parallax.init(elems, options);
     });
 
-    ScrollReveal().reveal('.portfolioheader', { duration: 5000 });
-    ScrollReveal().reveal('.portfoliolinks', { delay: 1000 });
-    ScrollReveal().reveal('.portfoliolinks', { duration: 5000 });
-    ScrollReveal().reveal('.emaildiv', { duration: 5000 });
-    ScrollReveal().reveal('.githubdiv', { duration: 5000 });
-    ScrollReveal().reveal('.linkedindiv', { duration: 5000 });
-    ScrollReveal().reveal('.skills', { delay: 1000 });
-    ScrollReveal().reveal('.skills', { duration: 5000 });
+    ScrollReveal().reveal('.propic', { delay: 500 });
+    ScrollReveal().reveal('.propic', { duration: 3000 });
+    ScrollReveal().reveal('.portfolioheader', { duration: 3000 });
+    ScrollReveal().reveal('.portfoliolinks', { delay: 500 });
+    ScrollReveal().reveal('.portfoliolinks', { duration: 500 });
+    ScrollReveal().reveal('.emaildiv', { duration: 3000 });
+    ScrollReveal().reveal('.githubdiv', { duration: 3000 });
+    ScrollReveal().reveal('.linkedindiv', { duration: 3000 });
+    ScrollReveal().reveal('.skills', { delay: 500 });
+    ScrollReveal().reveal('.skills', { duration: 3000 });
+    ScrollReveal().reveal('.skillsdiv', { delay: 500 });
+    ScrollReveal().reveal('.skillsdiv', { duration: 3000 });
+    ScrollReveal().reveal('.lblskills', { delay: 500 });
+    ScrollReveal().reveal('.lblskills', { duration: 3000 });
+
 
     $(document).ready(function() {
         $('.sidenav').sidenav();
         $('.parallax').parallax();
-        $('.computer-hover').mouseenter(function() {
-            $('#scale-demo').removeClass('scale-out');
-        });
-        $('#scale-demo').click(function() {
-            $('#scale-demo').addClass('scale-out');
-        })
     });
     </script>
 </body>
