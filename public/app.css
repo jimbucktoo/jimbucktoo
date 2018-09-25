@@ -32,16 +32,6 @@ html.sr .load-hidden {
     color: white;
 }
 
-.githubdiv {
-    float: left;
-    margin-left: 110px;
-}
-
-.linkedindiv {
-    float: left;
-    margin-left: 100px;
-}
-
 .emaildiv {
     float: left;
     margin-left: 100px;
@@ -112,7 +102,6 @@ html.sr .load-hidden {
 }
 
 #linkedinlogo:hover {
-    margin-top: 13px;
     opacity: 0.5;
 }
 
