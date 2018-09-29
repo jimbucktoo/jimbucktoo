@@ -1,8 +1,8 @@
-# Project Title
+# jimbucktoo
 
 jimbucktoo.com is a website developed as a portoflio site to showcase the projects that Web Developer James Liang has completed.
 
-## Built With
+## Technologies
 
 * [Materialize.css](https://materializecss.com) - The material design front-end framework used.
 * [Materialize Icons](https://material.io/tools/icons/?style=baseline) - Materialize icons.
