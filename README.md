@@ -1,6 +1,6 @@
 # jimbucktoo
 
-jimbucktoo.com is a website developed as a portoflio site to showcase the projects that Web Developer James Liang has completed.
+jimbucktoo.com is a website developed as a portoflio site to showcase the projects that I have completed.
 
 ## Technologies
 
