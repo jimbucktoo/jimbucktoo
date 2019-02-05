@@ -72,14 +72,14 @@ html.sr .load-hidden {
     font-family: 'Share Tech Mono', monospace;
     margin-top: 25vw;
     margin-left: 10vw;
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 
 .portfoliolink {
     color: black;
     margin-top: 5%;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .portfoliolink:hover {
@@ -87,6 +87,7 @@ html.sr .load-hidden {
     margin-top: 5%;
     margin-left: 1%;
     font-family: 'Share Tech Mono', monospace;
+    font-size: 3vw;
 }
 
 .propic {
@@ -146,5 +147,10 @@ html.sr .load-hidden {
     .resume-container {
         height: 630px;
         width: 100%;
+    }
+    .resumediv {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 20px;
+        text-align: center;
     }
 }
