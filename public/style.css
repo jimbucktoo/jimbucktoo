@@ -143,4 +143,8 @@ html.sr .load-hidden {
         font-family: 'Share Tech Mono', monospace;
         font-size: 13px;
     }
+    .resume-container {
+        height: 630px;
+        width: 100%;
+    }
 }
