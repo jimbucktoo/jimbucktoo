@@ -32,12 +32,36 @@ html.sr .load-hidden {
     color: white;
 }
 
+.blackbox {
+    background-color: black;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.resume-container {
+    height: 1170px;
+    width: 100%;
+}
+
 .emaildiv {
     float: left;
     margin-left: 100px;
     margin-top: 13px;
     font-family: 'Share Tech Mono', monospace;
     font-size: 20px;
+}
+
+.skillsdiv {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+.resumediv {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 30px;
+    text-align: center;
 }
 
 .portfoliolinks {
@@ -71,12 +95,6 @@ html.sr .load-hidden {
     margin-top: 3%;
     border: 5px solid black;
     z-index: 1;
-}
-
-.skillsdiv {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 20px;
-    text-align: center;
 }
 
 .h1tag {

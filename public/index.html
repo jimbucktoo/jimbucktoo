@@ -5,8 +5,8 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="/materialize.min.css" media="screen,projection">
-        <link rel="stylesheet" type="text/css" href="/app.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="https://unpkg.com/scrollreveal"></script>
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -27,8 +27,7 @@
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
     </head>
-
-    <body class="white">
+    <body>
         <div class="row">
             <nav class="hide">
                 <div class="nav-wrapper navbar z-depth-2">
@@ -88,7 +87,14 @@
             </div>
             <div class="parallax"><img src="/images/cover3.jpg" width="100%"></div>
         </div>
-        <script type="text/javascript" src="/materialize.min.js"></script>
+        <div class="section parallax-spacing">
+            <div class="row container">
+                <div class="resumediv">Resume</div>
+            </div>
+        </div>
+        <object class="resume-container" data="resume.pdf"></object>
+        <div class="blackbox"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
         <script>
             var config = {
@@ -121,12 +127,10 @@
             ScrollReveal().reveal('.lblskills', { delay: 500 });
             ScrollReveal().reveal('.lblskills', { duration: 3000 });
 
-
             $(document).ready(function() {
                 $('.sidenav').sidenav();
                 $('.parallax').parallax();
             });
         </script>
     </body>
-
 </html>
