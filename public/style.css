@@ -6,18 +6,6 @@ html.sr .load-hidden {
     visibility: hidden;
 }
 
-.navbar {
-    background-color: #0288d1;
-}
-
-.primaryGoal {
-    background-color: #0277bd;
-}
-
-.hide {
-    display: none;
-}
-
 .parallax {
     height: 100%;
     position: relative;
@@ -34,7 +22,14 @@ html.sr .load-hidden {
 
 .blackbox {
     background-color: black;
-    height: 30px;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.whitebox {
+    background-color: white;
+    height: 50px;
     width: 100%;
     margin-bottom: 0px;
 }
@@ -64,49 +59,12 @@ html.sr .load-hidden {
     text-align: center;
 }
 
-.portfoliolinks {
-    margin-left: 10%;
-}
-
-.portfolioheader {
-    font-family: 'Share Tech Mono', monospace;
-    margin-top: 25vw;
-    margin-left: 10vw;
-    font-size: 3.5vw;
-}
-
-.portfoliolink {
-    color: black;
-    margin-top: 5%;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 3vw;
-}
-
-.portfoliolink:hover {
-    color: blue;
-    margin-top: 5%;
-    margin-left: 1%;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 3vw;
-}
-
 .propic {
     position: fixed;
     margin-left: 81%;
     margin-top: 3%;
     border: 5px solid black;
     z-index: 1;
-}
-
-.h1tag {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 2vw;
-}
-
-.ptag {
-    margin-top: 5vw;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 2vw;
 }
 
 .lblskills {
@@ -126,6 +84,68 @@ html.sr .load-hidden {
 
 #githublogo:hover {
     opacity: 0.5;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.custom-card {
+    margin: 0.5rem;
+    background-color: black;
+    color: white;
+}
+
+.card-link {
+    color: white !important;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.description {
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.technologies {
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.custom-title {
+    margin-top: 1px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.custom-title-content {
+    display: flex;
+    justify-content: center;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.custom-card-image {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-image {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.custom-card-action {
+    border-top: 1px solid gray !important;
 }
 
 @media only screen and (max-width: 1200px) {
