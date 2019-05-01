@@ -127,6 +127,7 @@ html.sr .load-hidden {
 }
 
 .custom-title-content {
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     font-family: 'Share Tech Mono', monospace;
