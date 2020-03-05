@@ -105,6 +105,11 @@ html.sr .load-hidden {
 }
 
 .card-link {
+    color: gray !important;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card-link:hover {
     color: white !important;
     font-family: 'Ubuntu', sans-serif;
 }

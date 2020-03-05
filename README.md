@@ -1,6 +1,6 @@
 # jimbucktoo
 
-jimbucktoo.com is a website developed as a portoflio site to showcase the projects that I have completed.
+jimbucktoo.com is a web development portfolio website.
 
 ## Technologies
 
