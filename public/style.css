@@ -65,6 +65,7 @@ html.sr .load-hidden {
     margin-top: 3%;
     border: 5px solid black;
     z-index: 1;
+    box-shadow: 0 10px 15px black !important;
 }
 
 .lblskills {
@@ -102,11 +103,13 @@ html.sr .load-hidden {
     margin: 0.5rem;
     background-color: black;
     color: white;
+    box-shadow: 0 10px 15px black !important;
 }
 
 .card-link {
     color: gray !important;
     font-family: 'Ubuntu', sans-serif;
+    box-shadow: 0 3px 5px black !important;
 }
 
 .card-link:hover {
