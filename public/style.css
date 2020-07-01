@@ -117,7 +117,7 @@ html.sr .load-hidden {
 }
 
 .propic {
-    position: fixed;
+    position: relative;
     margin-left: 81%;
     margin-top: 3%;
     border: 5px solid black;
