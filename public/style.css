@@ -6,104 +6,36 @@ html.sr .load-hidden {
     visibility: hidden;
 }
 
-.parallax {
-    height: 100%;
-    position: relative;
-}
-
-.parallax-container {
-    height: 50vw;
-}
-
-.parallax-spacing {
-    background-color: black;
-    color: white;
-}
-
-.blackbox {
-    background-color: black;
-    height: 50px;
-    width: 100%;
-    margin-bottom: 0px;
-}
-
-.whitebox {
-    background-color: white;
-    height: 50px;
-    width: 100%;
-    margin-bottom: 0px;
-}
-
-.resume-container {
-    height: 1170px;
-    width: 100%;
-}
-
-.emaildiv {
-    float: left;
-    margin-left: 100px;
-    margin-top: 13px;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 20px;
-}
-
-.skillsdiv {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 20px;
-    text-align: center;
-}
-
-.resumediv {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 30px;
-    text-align: center;
-}
-
-.propic {
-    position: fixed;
-    margin-left: 81%;
-    margin-top: 3%;
-    border: 5px solid black;
-    z-index: 1;
-    box-shadow: 0 10px 15px black !important;
-}
-
-.lblskills {
-    margin-top: 3vw;
-    margin-left: 20vw;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 5vw;
-}
-
-#linkedinlogo {
-    margin-top: 13px;
-}
-
-#linkedinlogo:hover {
-    opacity: 0.5;
-}
-
-#githublogo:hover {
-    opacity: 0.5;
-}
-
-.space-between {
-    display: flex;
-    justify-content: space-between;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    margin-left: 30%;
-    margin-right: 30%;
+.card-content {
+    text-align: left;
 }
 
 .custom-card {
-    margin: 0.5rem;
     background-color: black;
     color: white;
     box-shadow: 0 10px 15px black !important;
+    text-align: center;
+    border-radius: 15px;
+    height: 100%;
+    margin: 5% 5%;
+}
+
+.custom-card-action {
+    border-top: 1px solid gray !important;
+    border-bottom-right-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.custom-image {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    border-radius: 15px;
 }
 
 .card-link {
@@ -118,47 +50,133 @@ html.sr .load-hidden {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.description {
-    font-size: 14px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.technologies {
-    font-size: 14px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
 .custom-title {
-    margin-top: 1px;
     background-color: black;
     color: white;
     width: 100%;
 }
 
 .custom-title-content {
-    margin-top: 70px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     font-family: 'Share Tech Mono', monospace;
 }
 
-.custom-card-image {
-    width: 300px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
+.description {
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 90%;
+    margin: 0% auto !important;
 }
 
-.custom-image {
-    margin-top: 3rem;
+.emaildiv {
+    float: left;
+    margin-left: 100px;
+    margin-top: 13px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+#githublogo:hover {
+    opacity: 0.5;
+}
+
+#linkedinlogo {
+    margin-top: 13px;
+}
+
+#linkedinlogo:hover {
+    opacity: 0.5;
+}
+
+.parallax {
+    height: 100%;
+    position: relative;
+}
+
+.parallax-container {
+    height: 50vw;
+}
+
+.parallax-spacing {
+    background-color: black;
+    color: white;
+}
+
+.projects {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.propic {
+    position: fixed;
+    margin-left: 81%;
+    margin-top: 3%;
+    border: 5px solid black;
+    z-index: 1;
+    box-shadow: 0 10px 15px black !important;
+}
+
+.resumeBox {
+    height: 1170px;
     width: 100%;
 }
 
-.custom-card-action {
-    border-top: 1px solid gray !important;
+.resume {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.techStack {
+    margin-top: 3vw;
+    margin-left: 20vw;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 5vw;
+}
+
+.whitebox {
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 1200px) {
+
+    .custom-card {
+        background-color: black;
+        color: white;
+        box-shadow: 0 10px 15px black !important;
+        text-align: center;
+        border-radius: 15px;
+        margin: 5% 5%;
+    }
+
+    .custom-image {
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 80%;
+        margin: 0px auto;
+    }
+
     .propic {
         display: none;
         position: fixed;
@@ -169,18 +187,68 @@ html.sr .load-hidden {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .skillsdiv {
-        font-family: 'Share Tech Mono', monospace;
-        font-size: 13px;
-    }
-    .resume-container {
-        height: 630px;
-        width: 100%;
-    }
-    .resumediv {
-        font-family: 'Share Tech Mono', monospace;
-        font-size: 20px;
+@media only screen and (max-width: 900px) {
+
+    .custom-card {
+        background-color: black;
+        color: white;
+        box-shadow: 0 10px 15px black !important;
         text-align: center;
+        border-radius: 15px;
+        margin: 5% 5%;
+    }
+
+    .custom-image {
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 90%;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .custom-card {
+        background-color: black;
+        color: white;
+        box-shadow: 0 10px 15px black !important;
+        text-align: center;
+        border-radius: 15px;
+        margin: 5% 5%;
+    }
+
+    .description {
+        font-size: 14px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .custom-image {
+        width: 150px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+
+    .resumeBox {
+        height: 100%;
+        width: 100%;
     }
 }
