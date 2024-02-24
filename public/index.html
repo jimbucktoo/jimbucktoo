@@ -1,111 +1,167 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Jimmy Liang</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Share+Tech|Ubuntu" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171797864-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-<head>
-    <title>&lt jimbucktoo /&gt</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="/materialize.min.css" media="screen,projection">
-    <link rel="stylesheet" type="text/css" href="/app.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-</head>
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-<body class="white">
-    <div class="row">
-        <nav class="hide">
-            <div class="nav-wrapper navbar z-depth-2">
-                <a href="#" class="brand-logo overflow"><i class="large material-icons" width="30px">person</i>James Liang</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#" class="waves-effect waves-light btn primaryGoal z-depth-0">About</a></li>
-                    <li><a href="#" class="waves-effect waves-light btn primaryGoal z-depth-0">Portfolio</a></li>
-                    <li><a href="#" class="waves-effect waves-light btn primaryGoal z-depth-0">Contact</a></li>
-                </ul>
+            gtag('config', 'UA-171797864-1');
+        </script>
+    </head>
+    <body>
+        <div class="parallax-container">
+            <div class="parallax">
+                <img class="hero" src="/images/hero.png" width="100%">
             </div>
-        </nav>
-        <ul class="sidenav" id="mobile-demo">
-            <li class="navy white-text sidenavtitle">Survaid</li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="/images/hero.png" width="100%"></div>
-    </div>
-    <div class="section parallax-spacing">
-        <div class="row container">
-            <div class="githubdiv"><a href="https://github.com/jimbucktoo"><img src="/images/githublogo-w.png" width="50px"><img src="/images/github-w.png" width="100px"></a></div>
-            <div class="linkedindiv"><a href="https://www.linkedin.com/in/jimmy-liang/"><img id="linkedinlogo" src="/images/linkedin-w.png" width="130px"></a></div>
-            <div class="emaildiv">jamesliang.g@gmail.com</div>
         </div>
-    </div>
-    <div class="parallax-container">
-        <br>
-        <br>
-        <br>
-        <div class="parallax"><img src="/images/skills.png" width="100%"></div>
-    </div>
-    <div class="section parallax-spacing">
-        <div class="row container">
+        <div class="section parallax-spacing">
+            <div class="row container">
+                <div class="githubdiv">
+                    <div id="githublogo" class="col s12 m6 l4">
+                        <center>
+                            <a href="https://github.com/jimbucktoo" target="_blank"><img src="/images/githublogo-w.png" width="50px"><img src="/images/github-w.png" width="100px"></a>
+                        </center>
+                    </div>
+                </div>
+                <div class="linkedindiv">
+                    <div id="linkedinlogo" class="col s12 m6 l4">
+                        <center>
+                            <a href="https://www.linkedin.com/in/jimbucktoo/" target="_blank"><img src="/images/linkedin-w.png" width="130px"></a>
+                        </center>
+                    </div>
+                </div>
+                <div class="emaildiv col s12 m12 l4">
+                    <center>jamesliang.g@gmail.com</center>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="parallax-container">
-        <h3 class="portfolioheader">Projects:</h3>
-        <div class="portfoliolinks"><a href="https://landingpage-3a359.firebaseapp.com/" class="portfoliolink">&ltlandingpage&gt</a></div>
-        <div class="portfoliolinks"><a href="https://comodiscount.com/" class="portfoliolink">&ltcomodiscount&gt</a></div>
-        <div class="parallax"><img src="/images/cover3.jpg" width="100%"></div>
-    </div>
-    <script type="text/javascript" src="/materialize.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-    <script>
-    var config = {
-        apiKey: "AIzaSyDOICvv4I17YxipbvrSeDs7HsmoloJVjVI",
-        authDomain: "landingpage-3a359.firebaseapp.com",
-        databaseURL: "https://landingpage-3a359.firebaseio.com",
-        projectId: "landingpage-3a359",
-        storageBucket: "landingpage-3a359.appspot.com",
-        messagingSenderId: "704168931957"
-    };
-    firebase.initializeApp(config);
+        <div class="parallax-container">
+            <div class="languages">Programming Languages</div>
+            <div class="parallax stack load-hidden"><img src="/images/languages.png" width="100%"></div>
+        </div>
+        <div class="section parallax-spacing">
+            <div class="row container">
+                <div class="projects">Projects</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="flex">
+                <div class="card custom-card">
+                    <img class="custom-image" src="/images/survaid.png">
+                    <span class="card-title custom-title-content">Survaid</span>
+                    <div class="card-content">
+                        <p class="description">
+                        Survaid is a web and mobile platform that facilitates real-time mobile sensor data collection from survey participants.
+                        </p>
+                    </div>
+                    <div class="card-action custom-card-action">
+                        <a href="https://survaidapp.com/" class="card-link" target="_blank">Demo</a>
+                        <a href="https://github.com/jimbucktoo/survaid/" class="card-link" target="_blank">Source Code</a>
+                    </div>
+                </div>
+                <div class="card custom-card">
+                    <img class="custom-image" src="/images/moviecrud.png">
+                    <span class="card-title custom-title-content">MovieCrud</span>
+                    <div class="card-content">
+                        <p class="description">
+                        MovieCrud is a full-stack web application that enables users to create, edit, share and discuss in-depth movie reviews.
+                        </p>
+                    </div>
+                    <div class="card-action custom-card-action">
+                        <a href="https://mcrud.surge.sh/" class="card-link" target="_blank">Demo</a>
+                        <a href="https://github.com/jimbucktoo/movie-crud-front-end/" class="card-link" target="_blank">Source Code</a>
+                    </div>
+                </div>
+                <div class="card custom-card">
+                    <img class="custom-image" src="/images/bitlinks.png">
+                    <span class="card-title custom-title-content">Bitlinks</span>
+                    <div class="card-content">
+                        <p class="description">
+                        Bitlinks is a web application that empowers users to create, share and track shortened links using Bitly's API.
+                        </p>
+                    </div>
+                    <div class="card-action custom-card-action">
+                        <a href="https://bitlinks.surge.sh/" class="card-link" target="_blank">Demo</a>
+                        <a href="https://github.com/jimbucktoo/bitlinks/" class="card-link" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+        <script>
+            var config = {
+                apiKey: "AIzaSyDOICvv4I17YxipbvrSeDs7HsmoloJVjVI",
+                authDomain: "landingpage-3a359.firebaseapp.com",
+                databaseURL: "https://landingpage-3a359.firebaseio.com",
+                projectId: "landingpage-3a359",
+                storageBucket: "landingpage-3a359.appspot.com",
+                messagingSenderId: "704168931957"
+            };
+            firebase.initializeApp(config);
 
-    var database = firebase.database();
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.parallax');
+                var instances = M.Parallax.init(elems);
+            });
 
-    function writeUserData(userId, name, email) {
-        firebase.database().ref('users/' + userId).set({
-            username: name,
-            email: email
-        });
-    };
+            ScrollReveal().reveal('.propic', {
+                delay: 500
+            });
+            ScrollReveal().reveal('.propic', {
+                duration: 3000
+            });
+            ScrollReveal().reveal('.portfolioheader', {
+                duration: 3000
+            });
+            ScrollReveal().reveal('.portfoliolinks', {
+                delay: 500
+            });
+            ScrollReveal().reveal('.portfoliolinks', {
+                duration: 500
+            });
+            ScrollReveal().reveal('.emaildiv', {
+                duration: 3000
+            });
+            ScrollReveal().reveal('.githubdiv', {
+                duration: 3000
+            });
+            ScrollReveal().reveal('.linkedindiv', {
+                duration: 3000
+            });
+            ScrollReveal().reveal('.stack', {
+                delay: 500
+            });
+            ScrollReveal().reveal('.stack', {
+                duration: 3000
+            });
+            ScrollReveal().reveal('.techStack', {
+                delay: 500
+            });
+            ScrollReveal().reveal('.techStack', {
+                duration: 3000
+            });
 
-    function emailCapture() {
-        var emailInput = document.getElementById("emailInput").value;
-        writeUserData("jimbucktoo", "jimbucktoo", emailInput);
-    };
-
-    $(document).ready(function() {
-        $('.sidenav').sidenav();
-
-        $('.homeScreen').mouseenter(function() {
-            $(this).addClass('z-depth-3')
-        }).mouseleave(function() {
-            $(this).removeClass('z-depth-3')
-        })
-
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.parallax');
-        var instances = M.Parallax.init(elems, options);
-    });
-
-    // Or with jQuery
-
-    $(document).ready(function() {
-        $('.parallax').parallax();
-    });
-    </script>
-</body>
-
+            $(document).ready(function() {
+                $('.sidenav').sidenav();
+                $('.parallax').parallax();
+            });
+        </script>
+    </body>
 </html>

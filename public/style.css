@@ -1,0 +1,249 @@
+div.row {
+    margin-bottom: 0px;
+}
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+.card-content {
+    text-align: left;
+}
+
+.custom-card {
+    background-color: #000000;
+    color: #FFFFFF;
+    box-shadow: 0 10px 15px #000000 !important;
+    text-align: center;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    margin: 5% 5%;
+}
+
+.custom-card-action { border-top: 1px solid #C0C0C0 !important;
+    border-bottom-right-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.custom-image {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    border-radius: 15px;
+}
+
+.card-link {
+    color: #C0C0C0 !important;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 0 3px 5px #000000 !important;
+    margin-right: 0px !important;
+}
+
+.card-link:hover {
+    color: #FFFFFF !important;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.custom-title {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.custom-title-content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.description {
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 90%;
+    margin: 0% auto !important;
+    text-align: center;
+}
+
+.emaildiv {
+    float: left;
+    margin-left: 100px;
+    margin-top: 13px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+#githublogo:hover {
+    opacity: 0.5;
+}
+
+.languages {
+    margin-top: 6vw;
+    margin-left: 14vw;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 4vw;
+}
+
+#linkedinlogo {
+    margin-top: 13px;
+}
+
+#linkedinlogo:hover {
+    opacity: 0.5;
+}
+
+.parallax {
+    height: 100%;
+    position: relative;
+}
+
+.parallax-container {
+    height: 50vw;
+}
+
+.parallax-spacing {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.projects {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.resume {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.resumeBox {
+    height: 1170px;
+    width: 100%;
+}
+
+.#FFFFFFbox {
+    background-color: #FFFFFF;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .custom-card {
+        background-color: #000000;
+        color: #FFFFFF;
+        box-shadow: 0 10px 15px #000000 !important;
+        text-align: center;
+        border-radius: 15px;
+        height: 100%;
+        width: 90%;
+        margin: 5% 5%;
+    }
+
+    .custom-image {
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 70%;
+        margin: 0px auto;
+    }
+
+    .propic {
+        display: none;
+        position: fixed;
+        margin-left: 81%;
+        margin-top: 3%;
+        border: 5px solid #000000;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .custom-card {
+        background-color: #000000;
+        color: #FFFFFF;
+        box-shadow: 0 10px 15px #000000 !important;
+        text-align: center;
+        border-radius: 15px;
+        margin: 5% 5%;
+    }
+
+    .custom-image {
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 80%;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .custom-card {
+        background-color: #000000;
+        color: #FFFFFF;
+        box-shadow: 0 10px 15px #000000 !important;
+        text-align: center;
+        border-radius: 15px;
+        margin: 5% 5%;
+    }
+
+    .description {
+        font-size: 14px;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .custom-image {
+        width: 150px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+
+    .resumeBox {
+        height: 100%;
+        width: 100%;
+    }
+}
