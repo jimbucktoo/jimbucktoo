@@ -1,226 +1,325 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Jimmy Liang</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Share+Tech+Mono"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Share+Tech|Ubuntu"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-171797864-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jimmy Liang — Software Engineer</title>
+  <meta name="description" content="Jimmy Liang — Software engineer building AI-powered web applications." />
+  <link rel="icon" type="image/png" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171797864-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-171797864-1');
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">JL</a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="mailto:jamesliang.g@gmail.com" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-      gtag("config", "UA-171797864-1");
-    </script>
-  </head>
-  <body>
-    <div class="section parallax-spacing">
-      <div class="row container">
-        <div class="githubdiv">
-          <div id="githublogo" class="col s12 m6 l4">
-            <center>
-              <a href="https://github.com/jimbucktoo" target="_blank"
-                ><img src="/images/githublogo-w.png" width="50px" /><img
-                  src="/images/github-w.png"
-                  width="100px"
-              /></a>
-            </center>
-          </div>
-        </div>
-        <div class="linkedindiv">
-          <div id="linkedinlogo" class="col s12 m6 l4">
-            <center>
-              <a href="https://www.linkedin.com/in/jimbucktoo/" target="_blank"
-                ><img src="/images/linkedin-w.png" width="130px"
-              /></a>
-            </center>
-          </div>
-        </div>
-        <div class="emaildiv col s12 m12 l4">
-          <center>jamesliang.g@gmail.com</center>
-        </div>
-      </div>
-    </div>
-    <div class="parallax-container">
-      <div class="parallax">
-        <img class="hero" src="/images/hero.png" width="100%" />
-      </div>
-    </div>
-    <div class="section parallax-spacing">
-      <div class="row container">
-        <div class="projects">Projects</div>
-      </div>
-    </div>
-    <div>
-      <div class="flex">
-        <div class="card custom-card">
-          <img class="custom-image" src="/images/GraphQLAI.png" />
-          <span class="card-title custom-title-content">GraphQLAI</span>
-          <div class="card-content">
-            <p class="description">
-              GraphQLAI converts plain English requests into precise,
-              ready-to-use GraphQL queries, simplifying and speeding up data
-              fetching.
-            </p>
-          </div>
-          <div class="card-action custom-card-action">
-            <a
-              href="https://graphql-ai.surge.sh/"
-              class="card-link"
-              target="_blank"
-              >Demo</a
-            >
-            <a
-              href="https://github.com/jimbucktoo/graphql-ai"
-              class="card-link"
-              target="_blank"
-              >Source Code</a
-            >
-          </div>
-        </div>
-        <div class="card custom-card">
-          <img class="custom-image" src="/images/MoonshotAI.png" />
-          <span class="card-title custom-title-content">MoonshotAI</span>
-          <div class="card-content">
-            <p class="description">
-              MoonshotAI is an AI-powered startup idea evaluation tool that
-              analyzes startup ideas to empower data-driven decision-making.
-            </p>
-          </div>
-          <div class="card-action custom-card-action">
-            <a
-              href="https://moonshot-ai.surge.sh/"
-              class="card-link"
-              target="_blank"
-              >Demo</a
-            >
-            <a
-              href="https://github.com/jimbucktoo/moonshot-ai"
-              class="card-link"
-              target="_blank"
-              >Source Code</a
-            >
-          </div>
-        </div>
-        <div class="card custom-card">
-          <img class="custom-image" src="/images/moviecrud.png" />
-          <span class="card-title custom-title-content">MovieCrud</span>
-          <div class="card-content">
-            <p class="description">
-              MovieCrud is a full-stack web application that enables users to
-              create, edit, share and discover in-depth movie reviews.
-            </p>
-          </div>
-          <div class="card-action custom-card-action">
-            <a href="https://mcrud.surge.sh/" class="card-link" target="_blank"
-              >Demo</a
-            >
-            <a
-              href="https://github.com/jimbucktoo/movie-crud-front-end/"
-              class="card-link"
-              target="_blank"
-              >Source Code</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section parallax-spacing">
-      <div class="row container">
-        <div class="projects">Programming Skills</div>
-      </div>
-    </div>
-    <div class="parallax-container">
-      <div class="languages">Languages</div>
-      <div class="parallax stack load-hidden">
-        <img src="/images/languages.png" width="100%" />
-      </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-    <script>
-      var config = {
-        apiKey: "AIzaSyDOICvv4I17YxipbvrSeDs7HsmoloJVjVI",
-        authDomain: "landingpage-3a359.firebaseapp.com",
-        databaseURL: "https://landingpage-3a359.firebaseio.com",
-        projectId: "landingpage-3a359",
-        storageBucket: "landingpage-3a359.appspot.com",
-        messagingSenderId: "704168931957",
-      };
-      firebase.initializeApp(config);
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="mailto:jamesliang.g@gmail.com" class="mobile-link">Contact</a>
+  </div>
 
-      document.addEventListener("DOMContentLoaded", function () {
-        var elems = document.querySelectorAll(".parallax");
-        var instances = M.Parallax.init(elems);
-      });
+  <section class="hero" id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to opportunities
+      </div>
+      <h1 class="hero-name">Jimmy Liang</h1>
+      <p class="hero-role">Software Engineer</p>
+      <p class="hero-desc">Building intelligent, user-focused web applications at the intersection of AI and great design.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#about" class="btn btn-ghost">About Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/jimbucktoo" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/jimbucktoo/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:jamesliang.g@gmail.com" class="social-btn" aria-label="Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
 
-      ScrollReveal().reveal(".propic", {
-        delay: 500,
-      });
-      ScrollReveal().reveal(".propic", {
-        duration: 3000,
-      });
-      ScrollReveal().reveal(".portfolioheader", {
-        duration: 3000,
-      });
-      ScrollReveal().reveal(".portfoliolinks", {
-        delay: 500,
-      });
-      ScrollReveal().reveal(".portfoliolinks", {
-        duration: 500,
-      });
-      ScrollReveal().reveal(".emaildiv", {
-        duration: 3000,
-      });
-      ScrollReveal().reveal(".githubdiv", {
-        duration: 3000,
-      });
-      ScrollReveal().reveal(".linkedindiv", {
-        duration: 3000,
-      });
-      ScrollReveal().reveal(".stack", {
-        delay: 500,
-      });
-      ScrollReveal().reveal(".stack", {
-        duration: 3000,
-      });
-      ScrollReveal().reveal(".techStack", {
-        delay: 500,
-      });
-      ScrollReveal().reveal(".techStack", {
-        duration: 3000,
-      });
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo reveal">
+          <div class="photo-wrapper">
+            <img src="/images/JimmyLiang.png" alt="Jimmy Liang" />
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-heading">Building the future,<br />one commit at a time.</h2>
+          <p class="about-text">I'm a software engineer with a passion for crafting AI-powered web applications. I combine technical rigor with a designer's eye to build products that are both powerful and delightful to use.</p>
+          <p class="about-text">My recent work focuses on leveraging AI to make complex workflows accessible — from converting natural language to GraphQL queries to evaluating startup ideas with data-driven analysis.</p>
+          <div class="about-links">
+            <a href="https://github.com/jimbucktoo" target="_blank" rel="noopener" class="about-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              github.com/jimbucktoo
+            </a>
+            <a href="https://www.linkedin.com/in/jimbucktoo/" target="_blank" rel="noopener" class="about-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              linkedin.com/in/jimbucktoo
+            </a>
+            <a href="mailto:jamesliang.g@gmail.com" class="about-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              jamesliang.g@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      $(document).ready(function () {
-        $(".sidenav").sidenav();
-        $(".parallax").parallax();
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Work</span>
+        <h2 class="section-heading">Featured Projects</h2>
+        <p class="section-desc">A selection of projects I've built — spanning AI tooling, full-stack apps, and developer utilities.</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img" src="/images/GraphQLAI.png" alt="GraphQLAI" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">GraphQLAI</h3>
+            <p class="card-desc">Converts plain English requests into precise, ready-to-use GraphQL queries — simplifying and speeding up data fetching.</p>
+            <div class="card-tags">
+              <span class="tag">React</span><span class="tag">GraphQL</span><span class="tag">AI</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://graphql-ai.surge.sh/" target="_blank" rel="noopener" class="card-btn primary">
+              Live Demo <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://github.com/jimbucktoo/graphql-ai" target="_blank" rel="noopener" class="card-btn ghost">
+              Source <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img" src="/images/MoonshotAI.png" alt="MoonshotAI" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">MoonshotAI</h3>
+            <p class="card-desc">An AI-powered startup idea evaluation tool that analyzes ideas to empower data-driven decision-making.</p>
+            <div class="card-tags">
+              <span class="tag">React</span><span class="tag">Python</span><span class="tag">AI</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://moonshot-ai.surge.sh/" target="_blank" rel="noopener" class="card-btn primary">
+              Live Demo <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://github.com/jimbucktoo/moonshot-ai" target="_blank" rel="noopener" class="card-btn ghost">
+              Source <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img" src="/images/moviecrud.png" alt="MovieCrud" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">MovieCrud</h3>
+            <p class="card-desc">A full-stack web application for creating, editing, sharing and discovering in-depth movie reviews.</p>
+            <div class="card-tags">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://mcrud.surge.sh/" target="_blank" rel="noopener" class="card-btn primary">
+              Live Demo <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://github.com/jimbucktoo/movie-crud-front-end/" target="_blank" rel="noopener" class="card-btn ghost">
+              Source <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img" src="/images/survaid.png" alt="Survaid" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Survaid</h3>
+            <p class="card-desc">A survey creation and data collection platform for building, distributing, and analyzing surveys at scale.</p>
+            <div class="card-tags">
+              <span class="tag">React</span><span class="tag">Firebase</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/jimbucktoo" target="_blank" rel="noopener" class="card-btn ghost full">
+              View on GitHub <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img" src="/images/inquizlit.png" alt="Inquizlit" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Inquizlit</h3>
+            <p class="card-desc">An interactive quiz platform for creating, sharing, and taking quizzes on any topic with a focus on literature.</p>
+            <div class="card-tags">
+              <span class="tag">React</span><span class="tag">Node.js</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/jimbucktoo" target="_blank" rel="noopener" class="card-btn ghost full">
+              View on GitHub <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img" src="/images/bitlinks.png" alt="Bitlinks" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Bitlinks</h3>
+            <p class="card-desc">A fast, lightweight URL shortener that generates compact, shareable links with click tracking.</p>
+            <div class="card-tags">
+              <span class="tag">React</span><span class="tag">Node.js</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/jimbucktoo" target="_blank" rel="noopener" class="card-btn ghost full">
+              View on GitHub <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-heading">Programming Skills</h2>
+      </div>
+      <div class="skills-groups reveal">
+        <div class="skill-group">
+          <h3 class="skill-group-label">Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-label">Frameworks &amp; Libraries</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">GraphQL</span>
+            <span class="skill-tag">Redux</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-label">Tools &amp; Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">OpenAI API</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2025 Jimmy Liang</p>
+        <div class="footer-links">
+          <a href="https://github.com/jimbucktoo" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/jimbucktoo/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:jamesliang.g@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('open');
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        mobileMenu.classList.remove('open');
       });
-    </script>
-  </body>
+    });
+
+    ScrollReveal({
+      distance: '24px',
+      duration: 650,
+      easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+      reset: false,
+    }).reveal('.reveal', { interval: 80 });
+  </script>
+</body>
 </html>
